@@ -208,54 +208,59 @@ main{
 
 #Tools{
     background-color: #0f172a;
-    padding: 60px;
+    padding: 60px 20px;
 }
 .tools-wrapper{
     padding: 40px;
     background-color: whitesmoke;
     color: #0f172a;
     border-radius: 20px;
-    width: 100%;
-    min-height: 80vh;
+    width: min(1120px, 100%);
+    min-height: auto;
+    margin: 0 auto;
 }
 .tools-header{
     text-align: center;
     margin-bottom: 20px;
 }
 .tools-header h1{
-    font-size: clamp(20px, 2vw, 30px);
+    font-size: clamp(2rem, 3vw, 3rem);
     margin-bottom: 10px;
     border-bottom: 1px solid #0f172a;
+    padding-bottom: 10px;
 }
 .tools-header p{
     max-width: 700px;
+    margin: 0 auto;
     line-height: 1.6;
 }
 .tools-grid{
     display: grid;
     width: 100%;
     gap: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 .tools-card{
-    border: 1px solid white;
-    padding: 20px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
-    transition: 0.5s ease;
+    border-radius: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: white;
-     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 .tools-card:hover{
-    transform: translatex(-6px);
+    transform: translateY(-4px);
 }
 .tools-card h2{
     margin-bottom: 10px;
+    font-size: 1.3rem;
 }
 .tools-card p{
-    line-height: 1.6;
+    line-height: 1.75;
+    text-align: center;
 }
 
 #Projects{
@@ -415,12 +420,25 @@ main{
         align-items: center;
         padding: 10px 0;
     }
+    .logo {
+        width: 100%;
+        flex: none;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
     nav {
         width: 100%;
     }
     ul {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 10px;
+    }
+    li {
+        margin: 4px;
+    }
+    li a {
+        padding: 8px 12px;
     }
     .profile {
         flex-direction: column;
@@ -437,6 +455,16 @@ main{
     }
     .profile-btn button {
         width: 100%;
+    }
+    #Tools {
+        padding: 40px 12px;
+    }
+    .tools-wrapper {
+        padding: 24px;
+    }
+    .tools-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
     }
 }
 
