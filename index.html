@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "5ilgxyQPF6gSEQBza",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            TECHDUCK
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#Profile">Profile</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Tools">Tools</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container" id="Profile">
+            <div class="profile">
+                <img src="/IMG_E2568.JPG" alt="ABOUT ME" style="min-width: 250px;height: 300px;">
+                <div class="intro">
+                    <h2 style="margin-bottom: 15px;">ABOUT ME</h2>
+                    <P style="margin-bottom: 10px;">Hi, i'm Noble (aka TECHDUCK)- a full stack Web Developer focused
+                        on building responsive,modern, and, user friendly web applications...
+                    </P>
+                    <article class="profile-article">
+                        <h5 style="font-weight: 100;">I enjoy solving real-world problems through code and continuously
+                            improving my skills by learning <span style="font-weight: 400; color: green;">New
+                                Technologies</span> and building projects
+                            </h3>
+                    </article>
+                    <div class="profile-btn">
+                        <button><a href="#Projects">View projects</a></button>
+                        <button><a href="#Contact">Hire me</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container" id="Services">
+            <div class="services-wrapper">
+                <div class="services-header">
+                    <h1>Web Development Services</h1>
+                    <p>As a full-stack web developer, I create responsive websites, powerful web apps, and reliable
+                        backend systems that help businesses grow online.</p>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">🌐</div>
+                        <h3>Responsive Websites</h3>
+                        <p>Modern landing pages and websites designed to look great on every device, from mobile to
+                            desktop.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3>Web Applications</h3>
+                        <p>Dynamic single-page apps and user interfaces built with clean code and smooth interactions.
+                        </p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🧩</div>
+                        <h3>API & Backend</h3>
+                        <p>Fast, secure backend services and REST APIs using Node.js, Express, and database
+                            integrations.</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🚀</div>
+                        <h3>Support & Growth</h3>
+                        <p>Ongoing maintenance, performance tuning, and updates so your site stays fast and reliable.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="container" id="Tools">
+            <div class="tools-wrapper">
+                <div class="tools-header">
+                    <h1>
+                        Technologies and tools that i use
+                    </h1>
+                </div>
+                <div class="tools-grid">
+                    <div class="tools-card">
+                        <h2>Front End</h2>
+                        <p>HTML5, CSS, Java Script, React</p>
+                    </div>
+                    <div class="tools-card">
+                        <h2>Back End</h2>
+                        <p>Node.js, Express.js, REST APIs</p>
+                    </div>
+                    <div class="tools-card">
+                        <h2>Data Base</h2>
+                        <p>MongoDB, MySQL, Firebase</p>
+                    </div>
+                    <div class="tools-card">
+                        <h2>Version Control</h2>
+                        <p>Git, GitHub</p>
+                    </div>
+                    <div class="tools-card">
+                        <h2>Deployment</h2>
+                        <p>Vercel, Netlify, Render</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="container" id="Projects">
+            <div class="project-wrapper">
+                <h1>coming soon</h1>
+            </div>
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+
+
+        <section class="container" id="Contact">
+            <div class="contact-header">
+                <h1>Contact Us</h1>
+                <p>
+                    Have a project idea or want to work together
+                    feel free to send me a message.
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-box">
+                        <h2>Email</h2>
+                        <p>techduck@gmail.com</p>
+                    </div>
+                    <div class="info-box">
+                        <h2>Phone</h2>
+                        <p>+234 909 0941 4270</p>
+                    </div>
+                    <div class="info-box">
+                        <h2>Location</h2>
+                        <p>Lagos, Nigeria</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <input type="text" name="from_name" placeholder="Your Name" id="name" required>
+                    <input type="email" name="reply_to" placeholder="Your Email" id="email" required>
+                    <input type="text" name="subject" placeholder="Subject" id="subject" required>
+                    <textarea name="message" rows="6" placeholder="Your Message" id="message" required></textarea>
+                    <button type="submit" onclick="sendForm(event)">Send Message</button>
+                    <p class="form-feedback" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <a href="#Profile" class="back-to-top"
+        style="display: none; position: fixed; bottom: 20px; right: 20px; padding: 10px 15px; background-color: #0a1931; color: #fff; border-radius: 5px; text-decoration: none;">Top</a>
+    <footer>
+
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
