@@ -98,6 +98,8 @@ main{
     margin-bottom: 30px;
 }
 .profile img{
+  width: 100%;
+  max-width: 450px;
   height: auto;
   display: block;
   border-radius: 8px;
@@ -407,6 +409,34 @@ main{
     .contact-content {
         grid-template-columns: 1fr;
         padding: 0 10px;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+    nav {
+        width: 100%;
+    }
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .profile {
+        flex-direction: column;
+        padding: 30px;
+        min-height: auto;
+    }
+    .profile img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .profile-btn {
+        flex-direction: column;
+        width: 100%;
+    }
+    .profile-btn button {
+        width: 100%;
     }
 }
 
