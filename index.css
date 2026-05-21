@@ -468,6 +468,54 @@ main{
     }
 }
 
+@media (max-width: 700px) {
+    #Tools {
+        padding: 30px 10px;
+    }
+    .tools-wrapper {
+        padding: 20px;
+    }
+    .tools-header h1 {
+        font-size: 1.9rem;
+    }
+    .tools-header p {
+        font-size: 0.95rem;
+    }
+    .tools-grid {
+        gap: 14px;
+    }
+    .tools-card {
+        padding: 18px;
+    }
+    .tools-card h2 {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 520px) {
+    #Tools {
+        padding: 20px 8px;
+    }
+    .tools-wrapper {
+        padding: 16px;
+    }
+    .tools-header h1 {
+        font-size: 1.6rem;
+    }
+    .tools-header p {
+        font-size: 0.9rem;
+    }
+    .tools-card {
+        padding: 14px;
+    }
+    .tools-card h2 {
+        font-size: 1.05rem;
+    }
+    .tools-grid {
+        gap: 12px;
+    }
+}
+
 @media (max-width: 650px) {
     .contact-header h1 {
         font-size: 2rem;
